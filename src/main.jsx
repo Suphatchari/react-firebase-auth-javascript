@@ -1,45 +1,24 @@
+import AppRouter from "./router/AppRouter";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
-import App from "./App.jsx";
-import ProtectedRoute from "./auth/protectedRoute.jsx";
-import Home from "./components/Home.jsx";
-import Login from "./components/Login.jsx";
-import Register from "./components/Register.jsx";
-import { UserAuthContextProvider } from "./context/UserAuthContext.jsx";
+import { UserAuthContextProvider } from "./context/UserAuthContext";
 
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "react-toastify/dist/ReactToastify.css";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />, // <App /> is the main component that contains the RouterProvider
-    errorElement: <div>Page not found</div>, // Error handling for undefined routes
-  },
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/register",
-    element: <Register />,
-  },
-  {
-    path: "/home",
-    element: (
-      <ProtectedRoute>
-        <Home />
-      </ProtectedRoute>
-    ),
-  },
-]);
+const rootElement = document.getElementById("root");
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <UserAuthContextProvider>
-      <RouterProvider router={router} />
-    </UserAuthContextProvider>
-  </StrictMode>
-);
+if (rootElement) {
+  createRoot(rootElement).render(
+    <StrictMode>
+      <UserAuthContextProvider>
+        <ToastContainer position="top-right" autoClose={3000} />
+        <RouterProvider router={AppRouter} />
+      </UserAuthContextProvider>
+    </StrictMode>
+  );
+}

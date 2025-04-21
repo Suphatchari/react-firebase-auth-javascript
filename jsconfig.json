@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "jsx": "react-jsx",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@auth/*": ["auth/*"],
+      "@components/*": ["components/*"],
+      "@config/*": ["config/*"],
+      "@context/*": ["context/*"],
+      "@css/*": ["css/*"],
+      "@helpers/*": ["helpers/*"],
+      "@pages/*": ["pages/*"],
+      "@router/*": ["router/*"],
+      "@services/*": ["services/*"]
+    }
+  },
+  "include": ["src"]
+}
