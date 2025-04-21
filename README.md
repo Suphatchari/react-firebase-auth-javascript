@@ -116,6 +116,13 @@ VITE_FIREBASE_MEASUREMENT_ID=...
 
 ---
 
+## 📚 Inspiration & Credits
+
+This project was originally inspired by a [YouTube tutorial](https://www.youtube.com/watch?v=x74LZmGmly8) on Firebase Authentication using React.  
+I followed the tutorial as a learning exercise, and later enhanced it with my own structure, styling, validation, and user experience improvements.
+
+---
+
 ## 🧱 Tech Stack
 
 | Technology           | Description / Link |
@@ -134,7 +141,13 @@ VITE_FIREBASE_MEASUREMENT_ID=...
 
 ## 📌 License
 
-This project is provided as a starting point. You can clone, extend, and reuse freely.
+This project is provided publicly for learning and inspiration.  
+You are welcome to **clone**, **adapt**, and **extend** it for your own use.
+
+However, please note:
+- ❌ This repository is **not open for contributions** (no pull requests)
+- ❌ Do not redistribute modified versions under the same repository name
+- 🔒 No official open source license has been applied yet
 
 ---
 
