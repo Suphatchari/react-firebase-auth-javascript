@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
 
-// import { useState } from "react";
-
 import reactLogo from "./assets/react.svg";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="text-center">
+    <div className="text-center mt-5">
       <div>
         <h3>Welcome Page</h3>
         <img src={reactLogo} alt="React logo" className="m-3" />
