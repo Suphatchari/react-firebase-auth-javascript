@@ -10,10 +10,10 @@ This project is designed to be a **boilerplate** for login/register systems with
 ## 🖼️ Preview
 
 ### 🔐 Login Page
-![Login preview](public\preview-login.png)
+![Login preview](./public/preview/preview-login.png)
 
 ### 📝 Register Page
-![Register preview](public\preview-register.png)
+![Register preview](./public/preview/preview-register.png)
 
 ---
 
