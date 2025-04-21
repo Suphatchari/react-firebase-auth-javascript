@@ -82,6 +82,40 @@ VITE_FIREBASE_PROJECT_ID=...
 
 ---
 
+## 🔧 Firebase Setup Guide
+
+Before running the project, make sure you have a Firebase project ready and follow these steps:
+
+### 1. Enable Authentication
+- Go to **Firebase Console** > **Build > Authentication**
+- Click **"Get started"**
+- Enable **Email/Password** as a Sign-in method
+
+### 2. Create Firestore Database
+- Go to **Firebase Console** > **Build > Firestore Database**
+- Click **"Create database"**
+- Choose **"Start in test mode"** (for development)
+- Select a region (e.g., `asia-southeast1`)
+
+### 3. Get Firebase config
+- Go to **Project Settings** > **Your apps**
+- Create a new **Web app** (</> icon)
+- Copy your Firebase config and paste it into a `.env` file:
+
+```env
+VITE_FIREBASE_API_KEY=...
+VITE_FIREBASE_AUTH_DOMAIN=...
+VITE_FIREBASE_PROJECT_ID=...
+VITE_FIREBASE_STORAGE_BUCKET=...
+VITE_FIREBASE_MESSAGING_SENDER_ID=...
+VITE_FIREBASE_APP_ID=...
+VITE_FIREBASE_MEASUREMENT_ID=...
+```
+
+> 🧪 Tip: You can use `.env.example` as a reference
+
+---
+
 ## 🧱 Tech Stack
 
 | Technology           | Description / Link |
