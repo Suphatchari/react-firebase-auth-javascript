@@ -8,7 +8,8 @@ function App() {
   return (
     <div className="text-center mt-5">
       <div>
-        <h3>Welcome Page</h3>
+        <h2>Welcome Page</h2>
+        <h6>(Vite + React + JavaScript)</h6>
         <img src={reactLogo} alt="React logo" className="m-3" />
       </div>
       <Link to="/login" className="btn btn-success mx-2 my-3">
